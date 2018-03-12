@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 /**
- * ¿¼Éú³É¼¨Í³¼Æ³ÌĞò
+ * è€ƒç”Ÿæˆç»©ç»Ÿè®¡ç¨‹åº
  * 
- * @author ĞìÆôÃ÷
+ * @author Scorpio-xu
  *
  */
 public class Test9 {
 
 	/**
-	 * Í³¼ÆÅĞ¶ÏÑ§Éú³É¼¨
+	 * ç»Ÿè®¡åˆ¤æ–­å­¦ç”Ÿæˆç»©
 	 * 
 	 * @param array
 	 * @return
@@ -33,7 +33,7 @@ public class Test9 {
 	}
 
 	/**
-	 * ÊäÈëÊı×Ö²¢¼ì²é
+	 * è¾“å…¥æ•°å­—å¹¶æ£€æŸ¥
 	 */
 	public static int input() {
 		Scanner sc = new Scanner(System.in);
@@ -49,7 +49,7 @@ public class Test9 {
 			if (0 == flag && 0 == Integer.parseInt(str))
 				flag = 1;
 			if (1 == flag)
-				System.out.println("ÄúÊäÈëµÄ²»ÊÇÕıÕûÊı£¬ÇëÖØĞÂÊäÈë£º");
+				System.out.println("æ‚¨è¾“å…¥çš„ä¸æ˜¯æ­£æ•´æ•°ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š");
 		} while (1 == flag);
 		return Integer.parseInt(str);
 	}
@@ -59,27 +59,27 @@ public class Test9 {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("µÚ¶ş´óÌâµÚ9Ğ¡Ìâ");
+		System.out.println("ç¬¬äºŒå¤§é¢˜ç¬¬9å°é¢˜");
 		System.out.println("**********************");
 
-		System.out.println("ÇëÊäÈëÑ§ÉúÈËÊı£¨×î¶à40¸ö£©£º");
+		System.out.println("è¯·è¾“å…¥å­¦ç”Ÿäººæ•°ï¼ˆæœ€å¤š40ä¸ªï¼‰ï¼š");
 		int n = 0;
 		do {
 			if (n > 40)
-				System.out.println("²»ÄÜ³¬¹ı40ÈË£¬ÇëÖØĞÂÊäÈë£º");
+				System.out.println("ä¸èƒ½è¶…è¿‡40äººï¼Œè¯·é‡æ–°è¾“å…¥ï¼š");
 			n = input();
 		} while (n > 40);
 		int[] array = new int[n];
 
 		int a = 0;
 		int score = 0;
-		System.out.println("ÇëÊäÈëÃ¿¸öÑ§ÉúµÄ³É¼¨£º");
+		System.out.println("è¯·è¾“å…¥æ¯ä¸ªå­¦ç”Ÿçš„æˆç»©ï¼š");
 		for (int i = 0; i < array.length; i++) {
 			a = i + 1;
-			System.out.print("ÇëÊäÈëµÚ" + a + "¸öÑ§ÉúµÄ³É¼¨£º");
+			System.out.print("è¯·è¾“å…¥ç¬¬" + a + "ä¸ªå­¦ç”Ÿçš„æˆç»©ï¼š");
 			do {
 				if (score > 100)
-					System.out.print("³É¼¨²»ÄÜ³¬¹ı100·Ö£¬ÇëÖØĞÂÊäÈë£º");
+					System.out.print("æˆç»©ä¸èƒ½è¶…è¿‡100åˆ†ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š");
 				score = input();
 			} while (score > 100);
 			array[i] = score;
@@ -90,9 +90,9 @@ public class Test9 {
 		int count1 = judgeArray[1];
 		int count2 = judgeArray[2];
 
-		System.out.println("Æ½¾ù³É¼¨Îª£º" + averageScore + "·Ö");
-		System.out.println("²»¼°¸ñÑ§ÉúÊıÁ¿Îª£º" + count1 + "¸ö");
-		System.out.println("³É¼¨ÓÅĞãÑ§ÉúÊıÁ¿Îª£º" + count2 + "¸ö");
+		System.out.println("å¹³å‡æˆç»©ä¸ºï¼š" + averageScore + "åˆ†");
+		System.out.println("ä¸åŠæ ¼å­¦ç”Ÿæ•°é‡ä¸ºï¼š" + count1 + "ä¸ª");
+		System.out.println("æˆç»©ä¼˜ç§€å­¦ç”Ÿæ•°é‡ä¸ºï¼š" + count2 + "ä¸ª");
 	}
 
 }
