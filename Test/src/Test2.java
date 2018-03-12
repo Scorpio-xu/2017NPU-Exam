@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 /**
- * ½«×Ö·û´®ÖÐµÄÊý×Ö×Ö·ûÊä³ö
- * @author ÐìÆôÃ÷
+ * å°†å­—ç¬¦ä¸²ä¸­çš„æ•°å­—å­—ç¬¦è¾“å‡º
+ * @author Scorpio-xu
  *
  */
 public class Test2 {
 
 	/**
-	 * È¥³ý·ÇÊý×Ö×Ö·û
+	 * åŽ»é™¤éžæ•°å­—å­—ç¬¦
 	 * @param str
 	 * @return
 	 */
@@ -20,7 +20,7 @@ public class Test2 {
 				numberStr += str.charAt(i);
 		}
 		if (0==numberStr.length())
-			System.out.println("ÄúÊäÈëµÄ×Ö·û´®ÖÐÃ»ÓÐÊý×Ö×Ö·û¡£");
+			System.out.println("æ‚¨è¾“å…¥çš„å­—ç¬¦ä¸²ä¸­æ²¡æœ‰æ•°å­—å­—ç¬¦ã€‚");
 		return numberStr;
 	}
 	
@@ -29,16 +29,16 @@ public class Test2 {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("µÚÒ»´óÌâµÚ2Ð¡Ìâ");
+		System.out.println("ç¬¬ä¸€å¤§é¢˜ç¬¬2å°é¢˜");
 		System.out.println("**********************");
 
-		System.out.println("ÇëÊäÈë×Ö·û´®£¨²»¶àÓÚ80¸ö×Ö·û£©£º");
+		System.out.println("è¯·è¾“å…¥å­—ç¬¦ä¸²ï¼ˆä¸å¤šäºŽ80ä¸ªå­—ç¬¦ï¼‰ï¼š");
 		Scanner sc = new Scanner(System.in);
 		String str = "";
 		
 		do {
 			if (str.length() > 80)
-				System.out.println("²»Òª´óÓÚ80¸ö×Ö·û£¬ÇëÖØÐÂÊäÈë£º");
+				System.out.println("ä¸è¦å¤§äºŽ80ä¸ªå­—ç¬¦ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š");
 			str = sc.next();
 		} while (str.length() > 80);
 
