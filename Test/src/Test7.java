@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 /**
- * ÕÒÖÊÊı
+ * æ‰¾è´¨æ•°
  * 
- * @author ĞìÆôÃ÷
+ * @author Scorpio-xu
  *
  */
 public class Test7 {
 
 	/**
-	 * ÅĞ¶ÏÒ»¸öÊıÊÇ·ñÊÇÖÊÊı
+	 * åˆ¤æ–­ä¸€ä¸ªæ•°æ˜¯å¦æ˜¯è´¨æ•°
 	 * 
 	 * @param number
 	 * @return
@@ -28,7 +28,7 @@ public class Test7 {
 	}
 
 	/**
-	 * ÊäÈëÊı×Ö²¢¼ì²é
+	 * è¾“å…¥æ•°å­—å¹¶æ£€æŸ¥
 	 */
 	public static int input() {
 		Scanner sc = new Scanner(System.in);
@@ -44,7 +44,7 @@ public class Test7 {
 			if (0 == flag && 0 == Integer.parseInt(str))
 				flag = 1;
 			if (1 == flag)
-				System.out.println("ÄúÊäÈëµÄ²»ÊÇÕıÕûÊı£¬ÇëÖØĞÂÊäÈë£º");
+				System.out.println("æ‚¨è¾“å…¥çš„ä¸æ˜¯æ­£æ•´æ•°ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š");
 		} while (1 == flag);
 		return Integer.parseInt(str);
 	}
@@ -54,19 +54,19 @@ public class Test7 {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("µÚ¶ş´óÌâµÚ7Ğ¡Ìâ");
+		System.out.println("ç¬¬äºŒå¤§é¢˜ç¬¬7å°é¢˜");
 		System.out.println("**********************");
 
 		int[] array = new int[20];
-		System.out.println("Ëæ»úÊäÈë20¸öÕıÕûÊı£º");
+		System.out.println("éšæœºè¾“å…¥20ä¸ªæ­£æ•´æ•°ï¼š");
 		int a = 1;
 		for (int i = 0; i < 20; i++) {
 			a = i + 1;
-			System.out.print("ÇëÊäÈëµÚ" + a + "¸öÊı£º");
+			System.out.print("è¯·è¾“å…¥ç¬¬" + a + "ä¸ªæ•°ï¼š");
 			array[i] = input();
 		}
 
-		System.out.print("ÄúÊäÈëµÄÊı×ÖÖĞÖÊÊıÓĞ£º");
+		System.out.print("æ‚¨è¾“å…¥çš„æ•°å­—ä¸­è´¨æ•°æœ‰ï¼š");
 		for (int i = 0; i < array.length; i++) {
 			if (isPrime(array[i])) {
 				System.out.print(array[i] + " ");
