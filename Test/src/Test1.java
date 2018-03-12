@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 /**
- * ÊµÏÖÃ°ÅİÅÅĞò
+ * å®ç°å†’æ³¡æ’åº
  * 
- * @author ĞìÆôÃ÷
+ * @author Scorpio-xu
  *
  */
 public class Test1 {
 
 	/**
-	 * Ã°ÅİÅÅĞò
+	 * å†’æ³¡æ’åº
 	 * 
 	 * @param array
 	 */
@@ -28,7 +28,7 @@ public class Test1 {
 	}
 
 	/**
-	 * Êä³öÊı×éÄÚÈİ
+	 * è¾“å‡ºæ•°ç»„å†…å®¹
 	 * 
 	 * @param array
 	 */
@@ -39,7 +39,7 @@ public class Test1 {
 	}
 
 	/**
-	 * ÊäÈëÊı×Ö²¢¼ì²é
+	 * è¾“å…¥æ•°å­—å¹¶æ£€æŸ¥
 	 */
 	public static int input() {
 		Scanner sc = new Scanner(System.in);
@@ -53,7 +53,7 @@ public class Test1 {
 					flag = 1;
 			}
 			if (1 == flag)
-				System.out.println("ÄúµÄÊäÈëÖĞ°üº¬·ÇÊı×Ö×Ö·û£¬ÇëÖØĞÂÊäÈë£º");
+				System.out.println("æ‚¨çš„è¾“å…¥ä¸­åŒ…å«éæ•°å­—å­—ç¬¦ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š");
 		} while (1 == flag);
 		return Integer.parseInt(str);
 	}
@@ -63,26 +63,26 @@ public class Test1 {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("µÚÒ»´óÌâµÚ1Ğ¡Ìâ");
+		System.out.println("ç¬¬ä¸€å¤§é¢˜ç¬¬1å°é¢˜");
 		System.out.println("**********************");
 
-		System.out.println("ÇëÊäÈëÄúÒªÊäÈë¼¸¸öÊı×Ö£º");
+		System.out.println("è¯·è¾“å…¥æ‚¨è¦è¾“å…¥å‡ ä¸ªæ•°å­—ï¼š");
 		int n = input();
 		int[] array = new int[n];
 		int a = 0;
-		System.out.println("ÇëÊäÈë´ıÅÅĞòµÄÊı×Ö£º");
+		System.out.println("è¯·è¾“å…¥å¾…æ’åºçš„æ•°å­—ï¼š");
 		for (int i = 0; i < n; i++) {
 			a = i + 1;
-			System.out.print("ÇëÊäÈëµÚ" + a + "¸öÊı£º");
+			System.out.print("è¯·è¾“å…¥ç¬¬" + a + "ä¸ªæ•°ï¼š");
 			array[i] = input();
 		}
 
-		System.out.print("ÄúÊäÈëµÄÊı×ÖÎª£º");
+		System.out.print("æ‚¨è¾“å…¥çš„æ•°å­—ä¸ºï¼š");
 		printArray(array);
 		array = bubbleSort(array);
 		System.out.println();
 
-		System.out.print("´ÓĞ¡µ½´óÅÅÁĞÎª£º");
+		System.out.print("ä»å°åˆ°å¤§æ’åˆ—ä¸ºï¼š");
 		printArray(array);
 	}
 
