@@ -3,6 +3,6 @@
 
 以下为机试原题：
 
-![](https://github.com/Scorpio-xu/2017NPU-Exam/blob/master/image/2017nwpu.png)
+![](https://github.com/Scorpio-xu/2017NPU-Exam/blob/master/image/2017NpuExam.png)
 
 代码中的题号与以上题号一致。
